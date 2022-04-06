@@ -141,7 +141,10 @@ h3{
     width: 50px;
     height:40px ;
     margin: auto;
-    background-color:orangered ;
+    color: orangered;
 
 
+}
+#para{
+    color:gray ;
 }
