@@ -16,7 +16,7 @@
   <!-------nav----->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light ">
 
-    <div class="container-fluid">
+    <div class="container-fluid"><span><img id="ico" src="/static/photo.jpg" alt=""></span>
       <a class="navbar-brand" id="logo" href="#">VISIONARY</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +37,7 @@
             <a class="nav-link  active " href="contact_us">Contact Us</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input style="border-color:orangered ;" class="form-control me-2" type="search" placeholder="Search"
-            aria-label="Search">
-          <button style="border-color:transparent ; background-color:  orangered;" class="btn btn-outline-success"
-            type="submit">Search</button>
-        </form>
+       
       </div>
     </div>
 
@@ -54,135 +49,24 @@
 
   <!-----------contact us-->
   <section id="Contact_Us">
-    <h1 id="login"> SignUp fast</h1>
-    <button type="button" class="bt " data-bs-toggle="modal" data-bs-target="#exampleModal">
-      sign up
-    </button>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">SIGN UP </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="signup" , method="POST">
-              <div class="msg">{{ msg }}</div>
-              
-
-
-              <div class="mb-3">
-                <label for="exampleInputFastname1" class="form-label">First Name</label>
-                <input name="first_name" placeholder="Fast Name" class="form-control" id="exampleInputFastname1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputseconname1" class="form-label">Second Name</label>
-                <input name="second_name" placeholder="Second Name" class="form-control" id="exampleInputseconname1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input name="email" placeholder="email" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-
-
-
-              <div class="mb-3 form-check">
-                
-              
-
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="bt ">Submit</button>
-                
-              
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="bt bt-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="bt ">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="Contact_Us">
-      <h1 id="login"> login if you already have account</h1>
-      <button type="button" class="bt " data-bs-toggle="modal" data-bs-target="#loginModal">
-        log in
-      </button>
-
-      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">log in</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form action="login" , method="post">
-                <div class="msg">{{ msg }}</div>
-
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input name="email" placeholder="email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input name="password" type="password" class="form-control" id="exampleInputPassword1">
-                  <i class="fas fa-lock"></i>
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <input type="submit" value="Login">
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="bt bt-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="bt ">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    
       <div class="lower">
         <h1 id="h45"> For more information contact us through</h1>
 
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-6">
-              <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a href="chrispino633@gmail.com">
+              <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a href="mailto:chrispino633@gmail.com">
                   <span> <img id="img7" src="/static/download.png" alt=""></span>
                   chrispino633@gmail.com </a></p>
               <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a href="tel:1-800-800-2299">
                   <span><img id="img7" src="/static/141090583-call-phone-icon-telephone-icon-vector-design-symbol.webp"
-                      alt=""></span> +254796014780 (Support)</a></p>
+                      alt=""></span> +2547-9601-4780 </a></p>
             </div>
+   
             <div class="col-lg-4 col-md-6">
               <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a
-                  href="mailto:vctung@outlook.com"> <span> <img id="img7" src="/static/download.png" alt=""></span>
-                </a></p>
-              <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a href="tel:1-800-800-2299">
-                  <span><img id="img7" src="/static/141090583-call-phone-icon-telephone-icon-vector-design-symbol.webp"
-                      alt=""></span> 1-800-800-2299 (Support)</a></p>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a
-                  href="clintoo:clintoodavi01@gmail.com"> <span><img id="img7" src="/static/download.png" alt="">
+                  href="mailto:clintoodavi01@gmail.com"> <span><img id="img7" src="/static/download.png" alt="">
                   </span> clintoodavi01@gmail.com </a></p>
 
               <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a href="tel:+274-70871-2423">

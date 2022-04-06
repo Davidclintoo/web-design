@@ -21,7 +21,7 @@ conn=psycopg2.connect("dbname='duka' user='postgres' host='localhost' password='
 
 @app.route("/")
 def home():
-    return  render_template("index.html") 
+    return  render_template("home.html") 
 
 
 
@@ -37,67 +37,7 @@ def about():
 def contact():
     return render_template("contact.html")     
 
-@app.route("/signup" ,methods=["GET", "POST"])
-def sinup():
-    msg=''
-    if request.method=="POST" and 'first_name' in request.form and 'second_name' in request.form and 'password' in request.form and 'email' in request.form:
-        cur=conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        first_name=request.form["first_name"]
-        second_name=request.form["second_name"],
-        email=request.form["email"],
-        password=request.form["password"]
-
-
-        rows=(first_name,second_name ,email ,password)
-        query=("INSERT INTO public.users( first_name, second_name, email, password)VALUES ( %s, %s, %s, %s)")
-        cur.execute(query,rows )
-        
-        conn.commit()
-
-        
-     
-    return render_template('index.html', msg = msg)
-        
-       
-
-
-
-@app.route("/login" ,methods=["GET", "POST"])
-def login():
-    msg = ''
-    if request.method=="POST" and 'email' in request.form and 'password' in request.form:
-        cur=conn.cursor()
-
-        
-        email=request.form["email"],
-        password=request.form["password"]
-        query=("SELECT * from users where 'email'=%s and 'password'=%s ")
-        row= (email ,password)
-        cur.execute(query,row)
-        users=cur.fetchone()
-        conn.commit
-
-      
-
-        if  users:
-            session['loggedin'] = True
-            session['id'] =  users['id']
-            session['email'] =  users['email']
-            return 'Logged in successfully!'
-
-            
-        else:
-            msg = 'Incorrect email/password!'
-
-    return redirect(url_for("home" ,msg=msg)) 
-    
-@app.route('/login/logout')
-def logout():
-   session.pop('loggedin', None)
-   session.pop('id', None)
-   session.pop('email', None)
-   return redirect(url_for('contact'))
 
 
 app.run(debug=True)    

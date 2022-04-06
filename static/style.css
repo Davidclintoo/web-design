@@ -27,10 +27,10 @@
 #About{position:relative ;
     z-index: 2;
     overflow: hidden;
-background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) ,url(./maxresdefault.jpg);
-    
+background:linear-gradient(to top, rgba(0,0,0,0.5),50%,rgba(0,0,0,0.5),50%) ,url(./maxresdefault.jpg);
+}   
 
-}
+
 #About::after{
     content: '';
     width: 100%;
@@ -57,9 +57,10 @@ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) ,url(.
 
 #Contact_Us{height:500px ;
     margin-top:0% ;
-background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) ,url(./maxresdefault.jpg);
-
+background:linear-gradient(to top, rgba(0,0,0,0.5),50% ,rgba(0,0,0,0.5),50%) ,url(./maxresdefault.jpg);
 }
+
+
 .bt{
     background-color: orangered;
 }
@@ -106,5 +107,41 @@ background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) ,url(.
     text-align: center;
     color: orangered;
     font-family:'Pushster', cursive  ;
+    text-transform: uppercase;
     
+}
+
+.container a{
+    list-style:none ;
+    color:gray ;
+    text-decoration:none ;
+}
+
+
+#edu{
+    height:500px ;
+
+}
+h3{
+    color:orangered ;
+    font-family:'Pushster', cursive  ;
+    text-align: center;
+    line-height:30px ;
+    text-transform: uppercase;
+}
+
+.education{
+    margin-top:40px ;
+}
+.charity{
+    margin-top: 40px;
+}
+
+#ico{
+    width: 50px;
+    height:40px ;
+    margin: auto;
+    background-color:orangered ;
+
+
 }
