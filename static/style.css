@@ -147,4 +147,15 @@ h3{
 }
 #para{
     color:gray ;
+    margin: auto;
+    padding-left:5px ;
 }
+
+#row1{background-color: bisque;
+
+}
+
+#row3{
+    background-color: crimson;
+}
+
