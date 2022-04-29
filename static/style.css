@@ -162,3 +162,19 @@ h3{
 #pdf{
     text-decoration: none;
 }
+
+#event{
+    text-align: center;
+    margin-top:50px ;
+}
+
+#up{
+    color: chocolate;
+    font-family:'Pushster', cursive  ;
+    
+}
+.day{
+    font-size:40px ;
+    color: darkgreen;
+    display: inline;
+}

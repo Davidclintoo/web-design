@@ -30,7 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light ">
 
     <div class="container-fluid"><span><img id="ico" src="/static/phot.jpg" alt=""></span>
-        <a class="navbar-brand" id="logo" href="#">VISIONARY</a>
+      <a class="navbar-brand" id="logo" href="#">VISIONARY</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -358,6 +358,8 @@
 
   </section>
 
+
+
   <div class="container">
     <div class="row">
       <div class="col-4">
@@ -392,13 +394,66 @@
               }
             }
           });
+
+
+
+          
+         
+
+
         </script>
       </div>
 
     </div>
   </div>
 
+  <div id="event">
+    <h2  id="up"> up coming event</h2>
+    <p id="ppp"> celebration for good results of 2021 Candidates</p>
 
+    <p class="day" id="days"></p>
+    <p class="day" id="hours"></p>
+    <p class="day" id="mins"></p>
+    <p class="day"  id="secs"></p>
+    <h2 id="end"> </h2>
+  </div>
+  <script>
+    // set the end date 
+    var countDown = new Date("August  20, 2022  11:36:49").getTime();
+    // set time to count after sec
+    var myFunction = setInterval(function () {
+
+
+      // time remaining 
+
+      var now = new Date().getTime();
+      var timeleft = countDown - now;
+
+      var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeleft % (1000 * 60)) / (1000));
+
+      // display the out put
+
+      document.getElementById("days").innerHTML = days + "days" + " "
+      document.getElementById("hours").innerHTML = hours + "hr" + " "
+      document.getElementById("mins").innerHTML = minutes + "min" + " "
+      document.getElementById("secs").innerHTML = seconds + "sec"+ " "
+
+
+      if (timeleft < 0) {
+        clearInterval(myFunction);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = ""
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+      }
+
+    }, 1000);
+
+  </script>
 
   <!----------end of achievements------->
 
