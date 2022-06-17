@@ -1,15 +1,80 @@
 
-
-.navbar-brand{
-    color:orangered ;
+*{
+    padding: 0;
+    margin:0 ;
 }
-#logo{
-    color: orangered;
+
+.background_image{
+    background-image:url(./IMG-20220103-WA0010.jpg);
+    height:120vh ;
+    max-height:100% ;
+    width:100% ;
+    max-width:100%  !important;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    opacity:50% ;
+    
+
+}
+
+#nav_bar {
+    position: sticky;
+    top: 0;
+    z-index: 15px;
+}
+
+
+
+.navbar a {
+    color:orangered;
+    text-transform: uppercase;
     font-size:50px ;
-    font-family:'Pushster', cursive  ;
 
     
 }
+.navbar a #nary{
+    color: greenyellow;
+    font-family:'Pushster', cursive  ;
+    text-transform: uppercase;
+    
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+    color: orangered;
+}
+
+.navbar .fa{
+    color:white ;
+    background-color:orangered ;
+}
+.navbar-nav li {
+    padding: 0 12px;
+}
+
+.navbar-nav li a {
+    color: orangered!important;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    transition: 0.2s;
+
+
+}
+
+
+.navbar-nav li a:hover {
+    color: rgb(71, 8, 8) !important;
+    z-index: 2px;
+
+
+}
+
+
+
+
 .navbar ul li a :hover{
     transition:0.4s ease ;
     background-color:  orangered;
@@ -24,10 +89,48 @@
     
 }
 
+
+/* why us */
+.why-us{
+    margin-top: 10%;
+}
+
+#mision{
+    color:orangered ;
+    font-family:'Pushster', cursive ;
+    font-weight:bold ;
+    font-size:30px ;
+    text-transform: uppercase;
+
+}
+
+#vision{
+    color:orangered ;
+    font-family:'Pushster', cursive ;
+    font-size:30px ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sub_mision{
+    color:greenyellow ;
+}
+
+#sub_vision{
+    color:greenyellow ;
+}
+
+#para_vi_mision{
+    color:white ;
+    width:100% ;
+    max-width:100% ;
+}
+
+
 #About{position:relative ;
     z-index: 2;
     overflow: hidden;
-background:linear-gradient(to top, rgba(0,0,0,0.5),50%,rgba(0,0,0,0.5),50%) ,url(./maxresdefault.jpg);
+    background:linear-gradient(to top, rgba(0,0,0,0.5),50%,rgba(0,0,0,0.5),50%) ,url(./maxresdefault.jpg);
 }   
 
 
@@ -82,9 +185,7 @@ background:linear-gradient(to top, rgba(0,0,0,0.5),50% ,rgba(0,0,0,0.5),50%) ,ur
 }
 
 
-#hp1{
-    background-color:orangered ;
-}
+
 
 #login{
     color: white;
