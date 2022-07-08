@@ -117,22 +117,30 @@
   </section>
 
   <section id="subject">
-    <div class="main_container">
+    <div class="container">
       <h3 id="form_h">Get in touch</h3>
 
-      <form id="form">
-        <label for="exampleInputname1">Name</label>
-        <input class="text_input" placeholder="name" type="text" name="name" id="exampleInputname1">
+      <form id="form" action="{{ url_for('contact') }}" , method="POST">
 
-        <label for="exampleInputsubject">Subject</label>
-        <input class="text_input" placeholder="subject" type="text" name="subject" id="exampleInputsubject">
+        <div class="form_input">
+          <label for="exampleInputname1">Name</label>
+          <input class="text_input" placeholder="name" type="text" name="name" id="exampleInputname1">
+        </div>
 
-        <label for="exampleInputemail">Email</label>
-        <input class="text_input" placeholder="email" type="text" name="email" id="exampleInputemail">
+        <div class="form_input">
+          <label for="exampleInputsubject">Subject</label>
+          <input class="text_input" placeholder="subject" type="text" name="subject" id="exampleInputsubject">
+        </div>
 
+        <div class="form_input">
+          <label for="exampleInputemail">Email</label>
+          <input class="text_input" placeholder="email" type="text" name="email" id="exampleInputemail">
+        </div>
 
-        <label for="exampleInputmessage">Message</label>
-        <textarea class="text_input" name="message" id="exampleInputmessage"></textarea>
+        <div class="form_input">
+          <label for="exampleInputmessage">Message</label>
+          <textarea class="text_input" name="message" id="exampleInputmessage"></textarea>
+        </div>
 
         <!-- <input id="submit_btn" type="submit" value="send"> -->
         <button id="submit_btn" type="submit" class="bt ">Send</button>
