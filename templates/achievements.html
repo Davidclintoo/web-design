@@ -25,7 +25,7 @@
 
   <script>
     $(document).ready(function () {
-      $('#table1, #table3').DataTable();
+      $('#table1, #table3, #table4').DataTable();
     });
   </script>
 
@@ -341,8 +341,17 @@
                 <td>Education</td>
                 <td>Eldoret</td>
               </tr>
+
               <tr>
                 <th scope="row">19</th>
+                <td>Lavenda</td>
+                <td>55</td>
+                <td>B-</td>
+                <td>Bsc physics</td>
+                <td>Masinde Muliro</td>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
                 <td>Belinda</td>
                 <td>49</td>
                 <td>c+</td>
@@ -358,7 +367,170 @@
     </div>
 
 
+    <div class="container 100% mt-5">
+      <div class="row">
+        <div class="col-12  col-xl-12 col-md-12 col-sm-12 col-xs-12   ">
+          <table id="table4" class="table table-success table-striped">
+            <thead>
+              <H1>Candidates of 2022</H1>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Points</th>
 
+                <th scope="col">Grade</th>
+                <th scope="col">Course</th>
+                <th scope="col">University</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Phidence</td>
+                <td>84</td>
+
+                <td>A</td>
+                <td>Medicine and surgery</td>
+                <td>University of Nairobi</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ivann</td>
+                <td>82</td>
+                <td>A</td>
+                <td>Mechatronics Engineerimg</td>
+                <td>Jomo Kenyatta University</td>
+
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Jacinter</td>
+                <td>80</td>
+                <td>A-</td>
+                <td>Law</td>
+                <td>University of Nairobi</td>
+
+
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Arnold</td>
+                <td>75</td>
+                <td>A-</td>
+                <td>Mechanical Engineerig</td>
+                <td>Dedan Kimathi university</td>
+
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>Chelsea</td>
+                <td>71</td>
+                <td>B+</td>
+                <td>Contruction Management</td>
+                <td>Jomo Kenyatta University</td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Humphrey</td>
+                <td>70</td>
+                <td>B+</td>
+                <td>Software Engineering</td>
+                <td>Co-operative University</td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Samuel</td>
+                <td>70</td>
+                <td>B+</td>
+                <td>Mechanical Engineerig</td>
+                <td>Technical University of Kenya</td>
+
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Nickolas</td>
+                <td>66</td>
+                <td>B</td>
+                <td>Information Technology</td>
+                <td>Technical University of Mombasa</td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Rodgers</td>
+                <td>66</td>
+                <td>B</td>
+                <td>Information Technology</td>
+                <td>Co-operative University</td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Joy</td>
+                <td>64</td>
+                <td>B</td>
+                <td>Economics</td>
+                <td>Jomo Kenyatta University</td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Fracis</td>
+                <td>63</td>
+                <td>B</td>
+                <td>Acturial Science</td>
+                <td>Egerton</td>
+
+              </tr>
+             
+
+              <tr>
+                <th scope="row">12</th>
+                <td>Tony</td>
+                <td>56</td>
+                <td>B-</td>
+                <td>Education</td>
+                <td>University of Nairobi</td>
+
+              </tr>
+
+              <tr>
+                <th scope="row">13</th>
+                <td>Wayne</td>
+                <td>56</td>
+                <td>B-</td>
+                <td>Education</td>
+                <td>Machakos</td>
+
+              </tr>
+
+              <tr>
+                <th scope="row">14</th>
+                <td>Russel</td>
+                <td>51</td>
+                <td>C+</td>
+                <td>Education Art</td>
+                <td>Meru University</td>
+
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>Stanley</td>
+                <td>40</td>
+                <td>C</td>
+                <td>Project Management</td>
+                <td>Kabete University</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
 
   </section>
@@ -382,12 +554,12 @@
           new Chart(document.getElementById("bar-chart"), {
             type: 'bar',
             data: {
-              labels: ["2019 (8 students)", "2020/2021 (19 students)",],
+              labels: ["2019 (8 students)", "2020/2021 (20 students)", "2022 (15 students)"],
               datasets: [
                 {
                   label: "points (% in percentage)",
-                  backgroundColor: ["#3e95cd", "#8e5ea2"],
-                  data: [71.16, 73.9]
+                  backgroundColor: ["#3e95cd", "#8e5ea2" ,"#708090"],
+                  data: [68.75, 67.35, 66.27]
                 }
               ]
             },
